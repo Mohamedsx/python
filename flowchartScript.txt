@@ -1,0 +1,23 @@
+start = True
+while start:
+    counter = 0
+    shape = str(input("enter a letter:"))
+    if shape == 'c' or 'b':
+        counter=+2
+    elif shape == 'e':
+        break
+    else:
+        print('error"please type a letter"')
+    W = int(input( " enter the width:"))
+    L = int(input('enter the length:'))
+    H = int(input('enter the height:'))
+    V = W*H*L
+    S_A = 2*H+W+2*H*L+2*W*L
+    print(V+S_A)
+    C = str(input("would you like to continue?:"))
+    if counter ==3:
+        input(C)
+    if C =='continue':
+        start
+    else:
+        break
